@@ -4,7 +4,7 @@
  *
 * *****************************************************************************/
 .footer {
-  background: rgba(105, 105, 105, 0.67);
+  background: rgba(55, 55, 55, 0.75);
   background-image: blur(8px);
   padding: 2.5rem 6%;
   min-height: 100px;
@@ -14,13 +14,22 @@
   justify-content: space-between;
 
   p {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.125rem;
   }
 
   a {
     display: block;
+  }
+}
 
-    img {}
+
+/******************************************************************************
+  Theme
+*******************************************************************************/
+@media (prefers-color-scheme: light) {
+  .footer {
+    background-color: var(--secondary-text-color);
+    color: #000000;
   }
 }

@@ -17,12 +17,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --hot-pink: #ff69b4;
   
   --primary-text-color: #FFF5EA;
   --secondary-text-color: #00afaf;
-  --bright-text-color: #ff69b4;
+  --bright-text-color: var(--hot-pink);
   --bright-text-color-2: #3cff00;
-  --highlight-selected-color: #45C495;
+  --highlight-selected-color: var(--hot-pink);
 }
 
 /******************************************************************************
@@ -88,7 +90,7 @@ a {
 *******************************************************************************/
 @media (prefers-color-scheme: light) {
   :root {
-    background-color: #FFF5EA;
+    background-color: #bababa;
   }
 
   a:hover {
