@@ -4,24 +4,72 @@
  *
 * *****************************************************************************/
 .header {
-  background-color: rgba(105, 105, 105, 0.67);
+  background-color: rgba(105, 105, 105, 0.75);
   backdrop-filter: blur(0.3125rem);
   padding: 1.3125rem 6% 1.25rem;
   min-height: 64px;
   position: sticky;
   top: 0;
   z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .logo {
-  color: hsla(330, 100%, 71%, 1);
+  /* color: hsla(330, 100%, 71%, 1); */
+  color: rgb(0, 214, 214);
   display: inline-block;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1;
 
   &:hover {
-    color: inherit;
+    color: rgb(0, 175, 175);
+  }
+}
+
+
+/******************************************************************************
+  Nav
+*******************************************************************************/
+.mainNav {
+  display: inline-flex;
+  gap: 0 1rem;
+  
+  a {
+    color: var(--primary-text-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0 0 0.25rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: var(--bright-text-color-2);
+      box-shadow: 0 -4px 8px 3px rgba(69, 252, 90, 0.4);
+      border-radius: 2px;
+      position: absolute;
+      bottom: 0.5rem;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      background: linear-gradient( var(--primary-text-color) 33%, var(--bright-text-color-2) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        bottom: 0;
+        opacity: 1;
+      }
+    }
   }
 }
 

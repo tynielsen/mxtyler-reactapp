@@ -10,12 +10,19 @@
 
   color-scheme: light dark;
   color: #FFF5EA;
-  background-color: #021b27;
-
+  /* background-color: #4A5650; */
+  background-color: #000000;
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  --primary-text-color: #FFF5EA;
+  --secondary-text-color: #00afaf;
+  --bright-text-color: #ff69b4;
+  --bright-text-color-2: #3cff00;
+  --highlight-selected-color: #45C495;
 }
 
 /******************************************************************************
@@ -38,7 +45,7 @@ body {
 }
 
 body::selection {
-  background-color: #45fc5a;
+  background-color: var(--highlight-selected-color);
   color: #130E09;
   text-shadow: none;
 }
@@ -62,7 +69,7 @@ p {
   margin: 0;
 
   + p {
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
   }
 }
 

@@ -4,9 +4,9 @@
  *
 * *****************************************************************************/
 import styles from './Portfolio.module.css';
-import sgImg1 from '/public/screengrab-campbells.png';
-import sgImg2 from '/public/screengrab-pepsico.png';
-import sgImg3 from '/public/screengrab-my529.png';
+import sgImg1 from '/screengrab-campbells.png';
+import sgImg2 from '/screengrab-pepsico.png';
+import sgImg3 from '/screengrab-my529.png';
 
 function Portfolio() {
   return(

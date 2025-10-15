@@ -14,26 +14,26 @@ function Hero() {
           Fresh. Hot. <span className={styles.accentColor}>Pixel-Perfect.</span>
         </h1>
         <p>
-          You know the feeling when everything just… clicks? When users smile 
-          instead of swear; we usually hear silence in those cases. It's a great 
-          feeling when code runs so smooth it practically purrs. That's not luck. 
-          Nor is it something to be memorized or read in a classroom. That's 
-          craftwork that was learned; a lesson learned through effort, aka., 
-          wisdom and experience.
+          You know that feeling when everything just… clicks? When users smile 
+          instead of swear, and your inbox stays quiet. When code runs so smooth 
+          it practically purrs. That's not luck, and it's not something you 
+          memorize from a book. That's experience—earned through mistakes, late 
+          nights, and lessons learned the hard way. Some call it wisdom. I 
+          call it craft.
         </p>
         <p>
-          For 15 years, I've been obsessed with building and rebuilding …and 
-          rebuilding… resilient systems that just work. My passion is taking 
-          on complex challenges and turning them into the most simple-looking 
-          solutions that teams can be proud of. Along the way, helpful 
-          resources are stumbled upon, and hopefully this will help others 
-          find some valuable resources too.
+          For almost 15 years, I've been obsessed with one thing: building 
+          resilient systems that just work. I love taking complex challenges 
+          and distilling them into elegant solutions—the kind that make teams 
+          say 'wait, that's it?' The kind that look simple because all the 
+          hard thinking happened behind the scenes.
+        </p>
+        <p>
+          Along the way, I've collected tools, techniques, and hard-won 
+          lessons. This site is where I share them.
         </p>
         <p className={styles.wip}><strong>
-          * By the way, please excuse the placeholder content and links 
-          to nowhere - this website is a new work-in-progress and is actively 
-          being built. Currently, the homepage is the only live page, and some 
-          content is still being refined.
+          * This site is freshly launched and growing. More content is on the way!
         </strong></p>
       </Card>
     </section>
