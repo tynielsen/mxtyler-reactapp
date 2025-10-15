@@ -1,0 +1,90 @@
+/******************************************************************************
+ *
+ *  Globally Shared Styles
+ *
+* *****************************************************************************/
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #FFF5EA;
+  background-color: #021b27;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/******************************************************************************
+  Body and Grid .container styles, layout styles
+*******************************************************************************/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body::selection {
+  background-color: #45fc5a;
+  color: #130E09;
+  text-shadow: none;
+}
+
+.container {
+  display: grid;
+  grid: 60px content-fit content-fit 100px / 12fr;
+  gap: 6rem 50px;
+}
+
+
+/******************************************************************************
+  Typography
+*******************************************************************************/
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0;
+
+  + p {
+    margin-top: 0.5rem;
+  }
+}
+
+a {
+  color: #646cff;
+  text-decoration: inherit;
+
+  &:hover {
+    color: #535bf2;
+  }
+}
+
+
+/******************************************************************************
+  Theme
+*******************************************************************************/
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #FFF5EA;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+}

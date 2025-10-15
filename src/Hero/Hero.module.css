@@ -1,0 +1,32 @@
+/******************************************************************************
+ *
+ *  Hero Component Styles
+ *
+* *****************************************************************************/
+.hero {
+
+  h1 {
+    color: #FCFCFE;
+    text-shadow: none;
+  }
+
+  p {
+    line-height: 1.5;
+    font-weight: 700;
+    text-size-adjust: 100%;
+  }
+}
+
+.accentColor {
+  color: hsla(330, 100%, 71%, 1);
+}
+
+.wip {
+  border: 2px solid hsla(330, 100%, 71%, 1);
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  margin: 1rem auto 0;
+  padding: 1rem 10%;
+  width: 100%;
+}

@@ -1,0 +1,168 @@
+/******************************************************************************
+ *
+ *  Card Component Styles
+ *
+* *****************************************************************************/
+.cardContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 6%;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  backdrop-filter: blur(2px);
+  background: linear-gradient(180deg, #292929DD 0%, #191919DD 50%);
+  border-radius: 16px;
+  box-shadow: inset 0 2px 2px 0 #e7c4a0ee,
+              inset 0 -2px 2px 0 #0003;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1.5rem 3rem 1.5rem 1.5rem;
+  text-shadow: 2px 1px 2px #0f0a;
+}
+
+.accents {
+  pointer-events: none;
+  user-select: none;
+
+  .topLight {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0; 
+    margin: auto;
+    width: 98%;
+    height: 6px;
+    border-radius: 6px;
+    background: #fffef9;
+    box-shadow: 
+      0 0px 1px 1px #ffc78e,
+      0 1px 2px 1px #ff942977,
+      0 2px 6px 1px #e98b2d77,
+      0 4px 12px 0px #ff9e3d99,
+      0 12px 20px 12px #ff800044;
+  }
+
+  .light,
+  .lightSmall {
+    --bgref: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 487 487'%3E%3Ccircle cx='243' cy='243.5' r='233' style='fill:none; opacity:.1; stroke:%23999; stroke-linecap:round; stroke-miterlimit:10; stroke-width:18px;'/%3E%3Ccircle cx='243.5' cy='243.5' r='243' style='fill:none; stroke:%23111; stroke-linecap:round; stroke-miterlimit:10;'/%3E%3Ccircle cx='243' cy='243.5' r='222' style='fill:none; stroke:%23111; stroke-linecap:round; stroke-miterlimit:10;'/%3E%3Cpath d='m10,243.5C10,114.82,114.32,10.5,243,10.5' style='fill:none; stroke:%23ddd; stroke-linecap:round; stroke-miterlimit:10; stroke-width:18px;'/%3E%3C/svg%3E");
+    position: absolute;
+    margin: 0 auto;
+    z-index: -1;
+    background-image: var(--bgref);
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-image: var(--bgref);
+      scale: 1.01;
+    }
+    
+    &::before {
+      filter: blur(0.25rem);
+    }
+        
+    &::after {
+      filter: blur(0.75rem);
+    }
+  }
+
+  .light {
+    left: -5rem;
+    top: 2rem;
+    width: 10.25rem;
+    height: 10.25rem;
+    animation: rotate360 22s linear infinite;
+
+    &.alt {
+      right: 0;
+      top: 44px;
+      left: auto;
+    }
+  }
+
+  .lightSmall {
+    bottom: -1.5rem;
+    right: 2rem;
+    width: 6.25rem; /* 100px */
+    height: 6.25rem; /* 100px */
+    animation: rotate360 18s linear -10s infinite;
+
+    &.alt {
+      bottom: -1rem;
+      left: 2.75rem; /* 44px */
+      right: auto;
+    }
+  }
+}
+
+@keyframes rotate360 { to {
+  rotate: 360deg;}
+}
+
+@media screen and ( max-width: 600px ) {
+  
+  .card {
+    height: fit-content !important;  
+        
+    img {
+      display: none;
+    }
+  } 
+
+  .acc-card {
+    height: 180px !important; 
+  }
+
+  .card,
+  .accents {
+    top: 30%;
+  }
+
+  .accents {
+
+    .light {
+      top: 124px;
+      bottom: 0;
+    }
+
+    .lightSmall {
+      top: 42px;
+    }
+  }
+}
+
+
+/******************************************************************************
+  Theme
+*******************************************************************************/
+@media (prefers-color-scheme: light) {
+  .accents {
+
+    .light,
+    .lightSmall {
+      --alt-bgref: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 487 487'%3E%3Ccircle cx='243' cy='243.5' r='233' style='fill:none; opacity:0.5; stroke:%23000; stroke-linecap:round; stroke-miterlimit:10; stroke-width:18px;'/%3E%3Ccircle cx='243.5' cy='243.5' r='243' style='fill:none; stroke:%23111; stroke-linecap:round; stroke-miterlimit:10;'/%3E%3Ccircle cx='243' cy='243.5' r='222' style='fill:none; stroke:%23111; stroke-linecap:round; stroke-miterlimit:10;'/%3E%3Cpath d='m10,243.5C10,114.82,114.32,10.5,243,10.5' style='fill:none; stroke:%23ADFF2F; stroke-linecap:round; stroke-miterlimit:10; stroke-width:18px;'/%3E%3C/svg%3E");
+      background-image: var(--alt-bgref);
+
+      &::before,
+      &::after {
+        background-image: var(--alt-bgref);
+      }
+    }
+  }
+}

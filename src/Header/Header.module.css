@@ -1,0 +1,40 @@
+/******************************************************************************
+ *
+ *  Header Component Styles
+ *
+* *****************************************************************************/
+.header {
+  background-color: rgba(105, 105, 105, 0.67);
+  backdrop-filter: blur(0.3125rem);
+  padding: 1.3125rem 6% 1.25rem;
+  min-height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.logo {
+  color: hsla(330, 100%, 71%, 1);
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+
+/******************************************************************************
+  Theme
+*******************************************************************************/
+@media (prefers-color-scheme: light) {
+  .header {
+    background-color: rgba(173, 255, 47, 0.67);
+  }
+
+  .logo {
+    color: #000000;
+  }
+}
