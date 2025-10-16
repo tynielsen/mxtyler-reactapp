@@ -19,12 +19,14 @@
   -moz-osx-font-smoothing: grayscale;
 
   --hot-pink: #ff69b4;
+  --lime: #3cff00;
+  --teal: #00dada;
   
   --primary-text-color: #FFF5EA;
-  --secondary-text-color: #00afaf;
+  --secondary-text-color: var(--teal);
   --bright-text-color: var(--hot-pink);
   --bright-text-color-2: #3cff00;
-  --highlight-selected-color: var(--hot-pink);
+  --highlight-selected-color: #3cff00;
 }
 
 /******************************************************************************

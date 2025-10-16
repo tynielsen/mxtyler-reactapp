@@ -6,7 +6,7 @@
 .header {
   background-color: rgba(105, 105, 105, 0.75);
   backdrop-filter: blur(0.3125rem);
-  padding: 1.3125rem 6% 1.25rem;
+  padding: 1rem 6%;
   min-height: 64px;
   position: sticky;
   top: 0;
@@ -14,12 +14,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   /* color: hsla(330, 100%, 71%, 1); */
   color: var(--secondary-text-color);
-  display: inline-block;
+  display: inline-flex;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1;
@@ -38,11 +39,11 @@
   gap: 0 1rem;
   
   a {
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     font-size: 1.25rem;
     font-weight: 700;
     cursor: pointer;
-    padding: 0 0 0.25rem;
+    padding: 0;
     position: relative;
 
     &::after {
@@ -50,8 +51,9 @@
       display: block;
       width: 100%;
       height: 3px;
-      background-color: rgb(0, 214, 214);
-      box-shadow: 0 -4px 8px 3px rgba(0, 214, 214, .7);
+      background: #00DADA;
+      background: linear-gradient(180deg, #8cd2d2 0%, #adffff 40%, #adffff 60%, #00DADA 100%);
+      box-shadow: 0 4px 8px 3px rgba(0, 214, 214, .7);
       border-radius: 2px;
       position: absolute;
       bottom: 0.5rem;
@@ -78,7 +80,7 @@
   Theme
 *******************************************************************************/
 @media (prefers-color-scheme: light) {
-  .header {
+.header {
     background-color: var(--secondary-text-color);
   }
 
