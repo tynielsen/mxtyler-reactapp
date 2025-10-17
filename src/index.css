@@ -11,7 +11,7 @@
   color-scheme: light dark;
   color: #FFF5EA;
   /* background-color: #4A5650; */
-  background-color: #000000;
+  background-color: #1d252b;
   
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,12 +21,20 @@
   --hot-pink: #ff69b4;
   --lime: #3cff00;
   --teal: #00dada;
+  --bright-orange: #ff8200;
+  --neon-orange: #FF5C00;
   
   --primary-text-color: #FFF5EA;
   --secondary-text-color: var(--teal);
   --bright-text-color: var(--hot-pink);
   --bright-text-color-2: #3cff00;
   --highlight-selected-color: #3cff00;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #bababa;
+  }
 }
 
 /******************************************************************************

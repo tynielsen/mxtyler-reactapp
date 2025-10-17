@@ -28,10 +28,12 @@ function Portfolio() {
           />
           <h3>Campbell's</h3>
           <p>
-            Developed a responsive ecosystem of multiple websites using WordPress, custom WP themes, 
-            a core WP theme that the custom themes use. For styles we used Sass CSS. I was able to 
-            incorporate all brands owned by Campbell's (Soup, V8, Swanson, Prego, Pace, and more) into 
-            this WordPress multi-site, or like we called it: ecosystem.
+            Architected a scalable WordPress multi-site ecosystem for Campbell's 
+            brand portfolio (Soup, V8, Swanson, Prego, Pace, and more), using a 
+            modular parent-child theme system and Sass CSS for consistent, 
+            responsive design across all implementations. Built with WCAG 
+            accessibility compliance, SEO optimization, and an intuitive admin 
+            interface that empowers non-technical users to manage updates independently.
           </p>
           <span>
             View Project &rarr;
@@ -50,9 +52,19 @@ function Portfolio() {
           />
           <h3>PepsiCo</h3>
           <p>
-            Led the Front-End and User Interface engineering for a content management system,
-            focusing on accessibility, responsive design, and SEO.
+            Led a team of 4-6 engineers for a content management system, 
+            balancing team guidance with hands-on technical contribution. 
+            Prioritized accessibility (WCAG), responsive design, and SEO while 
+            engineering a modular component system that reduced development 
+            time and content management.
           </p>
+          {/* <p>
+            As team lead, architected the front-end for a content management 
+            system, guiding a team of 4-6 engineers while prioritizing 
+            accessibility (WCAG), responsive design, and SEO. Engineered a 
+            modular component system that reduced development time and ensured 
+            consistency across the platform.
+          </p> */}
           <span>
             View Project &rarr;
           </span>
@@ -72,9 +84,10 @@ function Portfolio() {
             my529
           </h3>
           <p>
-            Rendered data into dynamic graphs and charts using D3.js library. I then linked 
-            those graphs to input range sliders to update graph data in realtime. Best example 
-            is a quarter of the way down the page at the provided URL.
+            Engineered interactive data visualizations with D3.js and real-time 
+            input controls, enabling users to dynamically explore datasets and 
+            see changes rendered instantly. This approach reduced analysis time 
+            and improved data accessibility for non-technical stakeholders.
           </p>
           <span>
             View Project &rarr;

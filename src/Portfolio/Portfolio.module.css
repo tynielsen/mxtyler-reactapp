@@ -11,16 +11,17 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   
   h2 {
     font-size: 2.25rem;
     text-decoration: underline;
+    margin: 0;
   }
 
   .projectCard {
-    background-color: rgb(40, 40, 40);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0.75rem;
     border: 1px solid rgb(31 41 55);
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
@@ -37,7 +38,7 @@
                   rgba(0, 0, 0, 0) 0 0 0 0, 
                   rgba(0, 0, 0, 0.027) 0 5.17726px 6.47158px -1.29432px, 
                   rgba(0, 0, 0, 0.027) 0 2.07091px 2.58863px -1.55318px;
-      transform: translateY(-8px);
+      transform: translateY(-0.5rem);
     }
 
     h3 {
@@ -64,7 +65,10 @@
   Theme
 *******************************************************************************/
 @media (prefers-color-scheme: light) {
-  h2 {
-    color: #021b27;
+  .portfolio {
+
+    h2 {
+      color: #021b27;
+    }
   }
 }

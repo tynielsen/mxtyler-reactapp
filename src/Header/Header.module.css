@@ -53,7 +53,7 @@
       height: 3px;
       background: #00DADA;
       background: linear-gradient(180deg, #8cd2d2 0%, #adffff 40%, #adffff 60%, #00DADA 100%);
-      box-shadow: 0 4px 8px 3px rgba(0, 214, 214, .7);
+      box-shadow: 0 -4px 8px 3px rgba(0, 214, 214, .7);
       border-radius: 2px;
       position: absolute;
       bottom: 0.5rem;
@@ -61,6 +61,7 @@
       transition: all 0.2s ease-in-out;
     }
 
+    &.current,
     &:hover {
       background: linear-gradient( var(--primary-text-color) 33%, rgb(0, 214, 214) 100%);
       background-clip: text;
@@ -97,16 +98,17 @@
     a {
       color: #000000;
 
-      &:hover {
-        background: linear-gradient( #000000 34%, #ece1d1 100%);
+      &::after {
+        background: #ffca90;
+        box-shadow: 0 -4px 8px 3px #ff8400bb;
+      }
+
+      &:hover,
+      &.current {
+        background: linear-gradient( #000000 33%, #ff8400 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-      }
-
-      &::after {
-        background-color: #ece1d1;
-        box-shadow: 0 -3px 8px 3px #ffb24eee;
       }
     }
   }
