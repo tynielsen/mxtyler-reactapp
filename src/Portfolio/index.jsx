@@ -35,9 +35,9 @@ function Portfolio() {
             accessibility compliance, SEO optimization, and an intuitive admin 
             interface that empowers non-technical users to manage updates independently.
           </p>
-          <span>
+          {/* <span>
             View Project &rarr;
-          </span>
+          </span> */}
         </a>
 
         <a
@@ -65,9 +65,9 @@ function Portfolio() {
             modular component system that reduced development time and ensured 
             consistency across the platform.
           </p> */}
-          <span>
+          {/* <span>
             View Project &rarr;
-          </span>
+          </span> */}
         </a>
 
         <a
@@ -89,9 +89,9 @@ function Portfolio() {
             see changes rendered instantly. This approach reduced analysis time 
             and improved data accessibility for non-technical stakeholders.
           </p>
-          <span>
+          {/* <span>
             View Project &rarr;
-          </span>
+          </span> */}
         </a>
       </div>
     </section>

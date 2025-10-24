@@ -39,10 +39,6 @@ const Resources = () => {
 const listItems = {
   "resourceList": [
     {
-      "title": "Tiny Wow",
-      "url": "https://tinywow.com/"
-    },
-    {
       "title": "CSS Tricks",
       "url": "https://css-tricks.com/"
     },
@@ -51,12 +47,16 @@ const listItems = {
       "url": "https://www.edx.org/"
     },
     {
-      "title": "The Odin Project",
-      "url": "https://www.theodinproject.com/"
-    },
-    {
       "title": "FreeCodeCamp",
       "url": "https://www.freecodecamp.org/"
+    },
+    {
+      "title": "HTML",
+      "url": "https://html.com/"
+    },
+    {
+      "title": "JavaScript Roadmap",
+      "url": "https://roadmap.sh/javascript"
     },
     {
       "title": "Learn-JS",
@@ -67,12 +67,20 @@ const listItems = {
       "url": "https://javascript.info/"
     },
     {
-      "title": "JavaScript Roadmap",
-      "url": "https://roadmap.sh/javascript"
+      "title": "The Odin Project",
+      "url": "https://www.theodinproject.com/"
     },
     {
       "title": "React.JS",
       "url": "https://react.dev/learn"
+    },
+    {
+      "title": "REST API",
+      "url": "https://restapitutorial.com/"
+    },
+    {
+      "title": "Tiny Wow",
+      "url": "https://tinywow.com/"
     },
     {
       "title": "TypeScript w/React",
@@ -81,14 +89,6 @@ const listItems = {
     {
       "title": "Vue.JS",
       "url": "https://www.freecodecamp.org/news/build-a-portfolio-with-vuejs/"
-    },
-    {
-      "title": "HTML",
-      "url": "https://html.com/"
-    },
-    {
-      "title": "REST API",
-      "url": "https://restapitutorial.com/"
     }
   ]
 }

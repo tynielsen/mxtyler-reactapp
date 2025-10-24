@@ -63,8 +63,15 @@ body::selection {
 }
 
 .container {
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url(/retro-neon-bg-6.jpg);
+  background-repeat: no-repeat;
+  background-position: center 100px;
+  background-size: 100% calc(100% - 100px);
+  background-attachment: fixed;
+  background-blend-mode: hard-light;
   display: grid;
-  grid: 60px content-fit content-fit 100px / 12fr;
+  grid: 100px/12fr;
   gap: 6rem 50px;
 }
 
@@ -101,6 +108,11 @@ a {
 @media (prefers-color-scheme: light) {
   :root {
     background-color: #bababa;
+  }
+
+  .container {
+    background-color: rgba(186, 186, 186, 0.8);
+    background-blend-mode: color-dodge;
   }
 
   a:hover {

@@ -21,13 +21,13 @@ function Header() {
 
   return(
     <header className={styles.header}>
-      <a href="#" className={styles.logo}>Engineering by TN</a>
+      <a href="#" className={styles.logo}>Web Engineering by TN</a>
 
       <nav className={styles.mainNav}>
         <a onClick={(e) => handleClick(e)} href="#hero">Home</a>
         <a onClick={(e) => handleClick(e)} href="#portfolio">Portfolio</a>
         <a onClick={(e) => handleClick(e)} href="#resources">Resources</a>
-        <a onClick={(e) => handleClick(e)} href="#contact">Contact</a>
+        {/* <a onClick={(e) => handleClick(e)} href="#contact">Contact</a> */}
       </nav>
     </header>
   );
