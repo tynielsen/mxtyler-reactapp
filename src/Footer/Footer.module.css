@@ -5,9 +5,9 @@
 * *****************************************************************************/
 .footer {
   align-items: center;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(0.5rem);
   background: rgba(55, 55, 55, 0.75);
-  color: rgb(0, 214, 214);
+  color: hsl(var(--teal));
   display: flex;
   flex-direction: row;
   justify-content: space-between;

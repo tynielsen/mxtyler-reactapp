@@ -39,6 +39,16 @@ const Resources = () => {
 const listItems = {
   "resourceList": [
     {
+      "title": "ColorKit",
+      "url": "https://colorkit.co/",
+      "description": "Color palettes, gradients, inspiration, and color tools."
+    },
+    {
+      "title": "CSS FX",
+      "url": "https://cssfx.netlify.app/",
+      "description": "Beautifully simple click-to-copy CSS effects."
+    },
+    {
       "title": "CSS Tricks",
       "url": "https://css-tricks.com/"
     },
@@ -79,12 +89,22 @@ const listItems = {
       "url": "https://restapitutorial.com/"
     },
     {
+      "title": "Temp Mail",
+      "url": "https://temp-mail.org/",
+      "description": "Temp Mail provides temporary, secure, anonymous, free, disposable email address. Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure."
+    },
+    {
       "title": "Tiny Wow",
       "url": "https://tinywow.com/"
     },
     {
       "title": "TypeScript w/React",
       "url": "https://www.freecodecamp.org/news/learn-typescript-with-react-handbook/"
+    },
+    {
+      "title": "UnSplash",
+      "url": "https://unsplash.com/",
+      "description": "Beautiful, free images and pictures. Millions of free high-resolution photos and illustrations brought to you by the world’s most generous community of contributors."
     },
     {
       "title": "Vue.JS",

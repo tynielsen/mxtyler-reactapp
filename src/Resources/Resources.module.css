@@ -4,6 +4,8 @@
  *
 * *****************************************************************************/
 .resourceLinks {
+  --top-light-color: 106, 100%, 50%;
+
   scroll-margin-top: 200px;
   position: relative;
   display: flex;
@@ -19,29 +21,23 @@
   }
 
   ul {
-    /* background-color: rgba(0, 0, 0, 0.8);
-    background-image: url('/retro-neon-bg-3.jpg');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 128% 110%;
-    background-blend-mode: overlay; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem 2rem;
-    justify-content: left;
+    gap: 1rem 0;
+    justify-content: flex-start;
     list-style: none;
     margin: 2rem 0;
-    padding: 1rem 2.25rem;
-    border: 2px solid var(--secondary-text-color);
+    padding: 1rem 4%;
+    border: 2px solid hsl(var(--top-light-color));
     /* border: 2px solid #becc00; */
 
     li {
-      flex: 0 1 17%;
+      flex: 0 1 50%;
 
       a {
         /* color: #0c91ff; */
-        color: var(--bright-orange);
+        color: hsl(var(--bright-orange));
         display: block;
         text-shadow: none;
         font-weight: 700;
@@ -52,10 +48,23 @@
           text-decoration: underline;
         }
       }
+    }
+  }
 
-      &:nth-child(5n + 2),
-      &:nth-child(5n + 4) {
-        a { text-align: right; }
+  @media screen and (min-width: 768px) {
+    ul {
+      gap: 1rem 2%;
+
+      li {
+        flex: 0 1 22%;
+
+        &:nth-child(4n + 1),
+        &:nth-child(4n + 3) {
+          a {
+            text-align: right;
+            word-wrap: normal;
+          }
+        }
       }
     }
   }

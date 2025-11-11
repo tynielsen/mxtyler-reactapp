@@ -15,6 +15,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 0 1rem;
 }
 
 .logo {
@@ -36,6 +37,8 @@
 *******************************************************************************/
 .mainNav {
   display: inline-flex;
+  justify-content: flex-end;
+  flex-grow: 1;
   gap: 0 1rem;
   
   a {
@@ -51,9 +54,9 @@
       display: block;
       width: 100%;
       height: 3px;
-      background: #00DADA;
-      background: linear-gradient(180deg, #8cd2d2 0%, #adffff 40%, #adffff 60%, #00DADA 100%);
-      box-shadow: 0 -4px 8px 3px rgba(0, 214, 214, .7);
+      background: #FFF;
+      background: linear-gradient(180deg, #fff 0%, #fff 40%, #fff 60%, #fff 100%);
+      box-shadow: 0 -4px 8px 3px rgba(255, 255, 255, .7);
       border-radius: 2px;
       position: absolute;
       bottom: 0.5rem;
@@ -63,7 +66,7 @@
 
     &.current,
     &:hover {
-      background: linear-gradient( var(--primary-text-color) 33%, rgb(0, 214, 214) 100%);
+      background: linear-gradient( rgb(0, 214, 214) 10%, rgb(255, 255, 255) 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

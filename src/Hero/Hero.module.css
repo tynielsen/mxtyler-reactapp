@@ -2,8 +2,9 @@
  *
  *  Hero Component Styles
  *
-* *****************************************************************************/
-.hero {
+ * *****************************************************************************/
+ .hero {
+  --top-light-color: var(--neon-blue);
   scroll-margin-top: 200px;
 
   h1 {
@@ -20,11 +21,11 @@
 }
 
 .accentColor {
-  color: hsla(330, 100%, 71%, 1);
+  color: hsl(var(--hot-pink));
 }
 
 .wip {
-  border: 2px solid hsla(330, 100%, 71%, 1);
+  border: 2px solid hsl(var(--hot-pink));
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 0.25rem 0.5rem;
   text-align: center;

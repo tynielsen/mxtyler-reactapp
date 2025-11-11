@@ -18,15 +18,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --hot-pink: #ff69b4;
-  --lime: #3cff00;
-  --teal: #00dada;
-  --bright-orange: #ff8200;
-  --neon-orange: #FF5C00;
+  /* RGB, built and left open to customize opacity (.card .accent lights) */
+  --hot-pink: 330, 100%, 71%;
+  --lime: 106, 100%, 50%;
+  --teal: 180, 100%, 43%;
+  --bright-orange: 31, 100%, 50%;
+  --neon-orange: 22, 100%, 50%;
+  --neon-blue: 202, 100%, 41%;
   
   --primary-text-color: #FFF5EA;
-  --secondary-text-color: var(--teal);
-  --bright-text-color: var(--hot-pink);
+  --secondary-text-color: hsl(var(--teal));
+  --bright-text-color: hsl(var(--hot-pink));
   --bright-text-color-2: #3cff00;
   --highlight-selected-color: #3cff00;
 }
@@ -93,11 +95,11 @@ p {
 }
 
 a {
-  color: #646cff;
+  color: hsl(var(--teal));
   text-decoration: inherit;
 
   &:hover {
-    color: #535bf2;
+    color: hsla(var(--teal), 0.6);
   }
 }
 

@@ -4,6 +4,7 @@
  *
 * *****************************************************************************/
 import { useState } from 'react';
+import GitHubIcon from '/src/assets/icons/icon-github';
 import styles from './Header.module.css';
 
 function Header() {
@@ -29,6 +30,9 @@ function Header() {
         <a onClick={(e) => handleClick(e)} href="#resources">Resources</a>
         {/* <a onClick={(e) => handleClick(e)} href="#contact">Contact</a> */}
       </nav>
+      <a href="https://github.com/tynielsen/mxtyler-reactapp" target="_blank">
+        <GitHubIcon fill="currentColor" width="36" height="36" />
+      </a>
     </header>
   );
 }
