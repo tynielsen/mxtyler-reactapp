@@ -28,6 +28,7 @@ function Header() {
         <a onClick={(e) => handleClick(e)} href="#hero">Home</a>
         <a onClick={(e) => handleClick(e)} href="#portfolio">Portfolio</a>
         <a onClick={(e) => handleClick(e)} href="#resources">Resources</a>
+        <a href="https://tynielsen.github.io/techieshabitat/" target="_blank">TechiesHabitat.com</a>
         {/* <a onClick={(e) => handleClick(e)} href="#contact">Contact</a> */}
       </nav>
       <a href="https://github.com/tynielsen/mxtyler-reactapp" target="_blank">
